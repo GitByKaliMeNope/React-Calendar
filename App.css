@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+border: blue;
+border-style: dotted;
+border-radius: 1.5rem;
+background-color: steelblue;
+
+}
+.span {
+  font-size: larger;
+  font-weight: bold;
+
+}
+.calendar {
+  align-items: center;
+  justify-content: center;
+}
