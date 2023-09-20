@@ -1,0 +1,66 @@
+/* CSS für den Kalender */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 Spalten für die Tage der Woche */
+    grid-template-rows: auto; /* Automatische Zeilenhöhe */
+    gap: 10px; /* Abstand zwischen den Zellen */
+    max-width: 600px; /* Maximalbreite des Kalenders */
+    margin: 0 auto; /* Zentriert den Kalender auf der Seite */
+  }
+  
+  .header {
+    grid-column: 1 / -1; /* Nimmt die volle Breite des Grids in Anspruch */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #211717;
+    font-size: 20px;
+  }
+  
+  .month-year {
+    text-align: center;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #211717;
+    cursor: pointer;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 Spalten für die Tage der Woche */
+    grid-auto-rows: 50px; /* Automatische Zeilenhöhe für die Tage */
+    border: 1px solid #ccc;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .empty {
+    background-color: #f0f0f0;
+    cursor: default;
+  }
+  
+  /* Stil für ausgewählten Tag und Formularblatt */
+  .selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .form {
+    grid-column: 1 / -1; /* Nimmt die volle Breite des Grids in Anspruch */
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
